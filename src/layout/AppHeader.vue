@@ -134,29 +134,22 @@
             <!-- TODO power by liuqiangdong -->
             <ul class="navbar-nav align-items-lg-center ml-lg-auto">
                 <li class="nav-item">
-                    <a class="nav-link nav-link-icon" href="https://www.facebook.com/creativetim" target="_blank"
-                       data-toggle="tooltip" title="Like us on Facebook">
-                        <i class="fa fa-facebook-square"></i>
-                        <span class="nav-link-inner--text d-lg-none">Facebook</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link nav-link-icon" href="https://www.instagram.com/creativetimofficial"
-                       target="_blank" data-toggle="tooltip" title="Follow us on Instagram">
-                        <i class="fa fa-instagram"></i>
-                        <span class="nav-link-inner--text d-lg-none">Instagram</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link nav-link-icon" href="https://twitter.com/creativetim" target="_blank"
-                       data-toggle="tooltip" title="Follow us on Twitter">
+                    <a class="nav-link nav-link-icon" href="javascript:void(0)" target="_blank"
+                       data-toggle="tooltip" title="推特还没有开通不要点！">
                         <i class="fa fa-twitter-square"></i>
                         <span class="nav-link-inner--text d-lg-none">Twitter</span>
                     </a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link nav-link-icon" href="https://weibo.com/fibosteam"
+                       target="_blank" data-toggle="tooltip" title="快来微博给东哥涨粉">
+                        <i class="fa fa-weibo"></i>
+                        <span class="nav-link-inner--text d-lg-none">微博</span>
+                    </a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link nav-link-icon" href="https://github.com/fibos-team"
-                       target="_blank" data-toggle="tooltip" title="Star us on Github">
+                       target="_blank" data-toggle="tooltip" title="Github 来 Star 一波?">
                         <i class="fa fa-github"></i>
                         <span class="nav-link-inner--text d-lg-none">Github</span>
                     </a>
