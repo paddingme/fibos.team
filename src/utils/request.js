@@ -9,7 +9,6 @@ import qs from "qs";
 import { apiPrefix } from "../config";
 // import { Message, Alert } from "element-ui"; // TODO
 
-console.error(apiPrefix)
 axios.defaults.baseURL = apiPrefix;
 
 axios.defaults.headers.post["Content-Type"] =
