@@ -20,7 +20,7 @@
                     <div class="col px-0" style="margin-bottom: 20px;">
                         <div class="row justify-content-center">
                             <h1 class="display-6 text-white text-center" style="width: 100%">
-                              FIBOS 全节点区块数据备份
+                              FIBOS 主网全节点区块数据备份
                             </h1>
                             <br>
                             <p class="lead  text-white">东哥每日定时备份，AWS S3 / 青云加速下载，助你快速同步</p>
