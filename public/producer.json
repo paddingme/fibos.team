@@ -1,0 +1,65 @@
+{
+  "producer_account_name": "liuqiangdong",
+  "producer_public_key": "FO5RpGum8RXE5RGEUpi3hRYP5Dype45gn8EjoJuYsota6gBMLkzv",
+  "org": {
+    "candidate_name": "FIBOS TEAM",
+    "website": "https://fibos.team",
+    "ownership_disclosure": "https://fibos.team/ownership_disclosure.html",
+    "code_of_conduct": "https://fibos.team/code_of_conduct.html",
+    "email": "bp@fibos.team",
+    "branding": {
+      "logo_256": "https://fibos.team/fibosteam_logo_256.png",
+      "logo_1024": "https://fibos.team/fibosteam_logo_1024.png",
+      "logo_svg": "https://fibos.team/fibosteam_logo.svg"
+    },
+    "location": {
+      "name": "Beijing",
+      "country": "CN",
+      "latitude": 39.9042,
+      "longitude": 116.4074
+    },
+    "social": {
+      "steemit": "",
+      "twitter": "",
+      "github":"fibos-team",
+      "telegram": "",
+      "wechat": "",
+      "weibo":"fibosteam",
+      "youtube": "",
+      "facebook": "",
+      "reddit": "",
+      "keybase": ""
+    }
+  },
+  "nodes": [{
+      "location": {
+        "name": "Bejing",
+        "country": "CN",
+        "latitude": 39.9042,
+        "longitude": 116.4074
+      },
+      "node_type": "producer"
+    },
+    {
+      "location": {
+        "name": "Tokyo",
+        "country": "JP",
+        "latitude": 35.6895,
+        "longitude": 139.6917
+      },
+      "node_type": "full",
+      "api_endpoint": "http://api.fibos.team",
+      "ssl_endpoint": "https://api.fibos.team"
+    },
+    {
+      "location": {
+        "name": "Tokyo",
+        "country": "JP",
+        "latitude": 35.6895,
+        "longitude": 139.6917
+      },
+      "node_type": "seed",
+      "p2p_endpoint": "p2p.fibos.team:9876"
+    }
+  ]
+}

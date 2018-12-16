@@ -41,6 +41,9 @@
                         节点故事
                     </a>
                 </li>
+                <li class="nav-item">
+                    <router-link to="/about" class="nav-link nav-link-icon">BP 信息</router-link>
+                </li>
             </ul>
 
             <!-- <ul class="navbar-nav navbar-nav-hover align-items-lg-center">

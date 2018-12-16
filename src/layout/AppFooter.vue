@@ -50,9 +50,22 @@
             </div>
             <hr>
             <div class="row align-items-center justify-content-center">
-                <div class="copyright">
-                    &copy; 2018
-                    <a href="https://fibos.team" target="_blank">FIBOS TEAM</a>.
+                <div class="col-md-6">
+                    <div class="copyright">
+                        &copy; 2018
+                        <a href="https://fibos.team" target="_blank">FIBOS TEAM</a>.
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <ul class="nav nav-footer justify-content-end">
+                        <!-- <li class="nav-item">
+                            <a href="/ownership_disclosure.html" class="nav-link" target="_blank">disclosure</a>
+                        </li> -->
+                        <li class="nav-item">
+                            <a href="/producer.json"
+                               class="nav-link" target="_blank">producer.json</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
