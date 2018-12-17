@@ -15,7 +15,7 @@
                     <close-button @click="closeMenu"></close-button>
                 </div>
             </div>
-
+<!--
             <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
                 <li class="nav-item">
                     <router-link to="/backups" class="nav-link nav-link-icon" >
@@ -44,7 +44,7 @@
                 <li class="nav-item">
                     <router-link to="/about" class="nav-link nav-link-icon">BP 信息</router-link>
                 </li>
-            </ul>
+            </ul>-->
 
             <!-- <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
                 <base-dropdown class="nav-item" menu-classes="dropdown-menu-xl">

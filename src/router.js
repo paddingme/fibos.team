@@ -5,7 +5,7 @@ import AppFooter from "./layout/AppFooter";
 // import Index from "./views/Index.vue";
 // import Components from "./views/Components.vue";
 import Backups from "./views/Backups.vue";
-// import About from "./views/About.vue";
+import About from "./views/About.vue";
 // import Landing from "./views/Landing.vue";
 // import Login from "./views/Login.vue";
 // import Register from "./views/Register.vue";
@@ -42,16 +42,16 @@ export default new Router({
         default: Backups,
         footer: AppFooter
       }
-    }
-    // {
-    //   path: "/about",
-    //   name: "about",
-    //   components: {
-    //     header: AppHeader,
-    //     default: About,
-    //     footer: AppFooter
-    //   }
-    // },
+    },
+    {
+      path: "/about",
+      name: "about",
+      components: {
+        header: AppHeader,
+        default: About,
+        footer: AppFooter
+      }
+    },
     // {
     //   path: "/landing",
     //   name: "landing",

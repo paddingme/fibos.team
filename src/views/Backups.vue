@@ -37,7 +37,7 @@
                               <th scope="col">MD5 Checksum</th>
                             </tr>
                           </thead>
-                          <tbody>
+                          <tbody  style="min-height:200px;">
                             <!-- TODO 复制 & 添加数据的loading -->
                             <tr v-for="(item, index) in backups" :key="item.md5chksum" v-if="index < 5">
                               <td>{{item.name}}</td>
