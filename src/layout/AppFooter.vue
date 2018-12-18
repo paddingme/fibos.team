@@ -22,7 +22,7 @@
             <div class="row row-grid align-items-center my-md">
                 <div class="col-lg-6">
                     <h3 class="text-primary font-weight-light mb-2">支持我们请投票给 <code>liuqiangdong</code></h3>
-                    <!-- <h4 class="mb-0 font-weight-light">发现 FIBOS 无处不在的价值</h4> -->
+                    <blockquote class="mb-0 font-weight-light">为东哥打尻，新主页很漂亮!</blockquote>
                 </div>
                 <!-- TODO -->
                 <div class="col-lg-6 text-lg-center btn-wrapper">
@@ -75,4 +75,22 @@
 export default {};
 </script>
 <style>
+blockquote {
+  /* background: #f9f9f9; */
+  border-left: 4px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.1em 10px;
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+/* blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+} */
+blockquote p {
+  display: inline;
+}
 </style>
