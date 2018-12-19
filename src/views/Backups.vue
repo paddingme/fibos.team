@@ -124,7 +124,9 @@ export default {
             item.name = strArr[0] + '_' + strArr[1] + '_' + strArr[2].slice(0,8) + '_' + strArr[2].slice(8)
             return item;
           })
-          this.backups = arr;
+          this.backups = arr.sort((a,b) => {
+            return new Date(b.updated) - new Date(a.updated);
+          });
           this.loading = false;
       })
     }
