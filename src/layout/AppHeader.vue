@@ -5,24 +5,25 @@
                 <img src="img/brand/fibos.team.png">
             </a>
 
-            <div class="row" slot="content-header" slot-scope="{closeMenu}">
-                <div class="col-6 collapse-brand">
+            <div class="row" slot="content-header" slot-scope="{closeMenu}" >
+                <div class="col-6 collapse-brand" >
                     <a href="/">
-                        <img src="img/brand/fibos.team.png">
+                        <img src="img/brand/fibos.team.png"
+                            style="background: rgb(119, 149, 248);;border-radius: 5px;padding: 1px;">
                     </a>
                 </div>
                 <div class="col-6 collapse-close">
                     <close-button @click="closeMenu"></close-button>
                 </div>
             </div>
-<!--
+
             <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
                 <li class="nav-item">
-                    <router-link to="/backups" class="nav-link nav-link-icon" >
+                    <router-link to="/" class="nav-link nav-link-icon" >
                         数据备份
                     </router-link>
                 </li>
-                <base-dropdown tag="li" class="nav-item">
+                <!-- <base-dropdown tag="li" class="nav-item">
                     <a slot="title" href="#" class="nav-link" data-toggle="dropdown" role="button">
                         <i class="ni ni-collection d-lg-none"></i>
                         <span class="nav-link-inner--text">节点监测</span>
@@ -40,11 +41,11 @@
                     <a class="nav-link nav-link-icon" href="#">
                         节点故事
                     </a>
-                </li>
+                </li> -->
                 <li class="nav-item">
                     <router-link to="/about" class="nav-link nav-link-icon">BP 信息</router-link>
                 </li>
-            </ul>-->
+            </ul>
 
             <!-- <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
                 <base-dropdown class="nav-item" menu-classes="dropdown-menu-xl">

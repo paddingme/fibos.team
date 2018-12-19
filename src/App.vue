@@ -18,3 +18,9 @@ export default {
   }
 };
 </script>
+<style>
+.vue-content-placeholders-text__line {
+    height: 20px;
+    margin: 20px 0;
+}
+</style>

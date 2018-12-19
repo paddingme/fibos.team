@@ -18,7 +18,7 @@
                         <div class="row justify-content-center">
                                 <div class="card-profile-image align-center">
                                     <a href="#">
-                                        <img v-lazy="'img/theme/fibos.team.png'" class="rounded-circle" style="background-color: #fff;">
+                                        <img v-lazy="'img/theme/fibos.team.png'" class="rounded-circle" style="background-color: #fff;width:180px;height:180px;">
                                     </a>
                                 </div>
                         </div>

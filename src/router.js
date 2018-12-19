@@ -35,6 +35,15 @@ export default new Router({
     //   }
     // },
     {
+      path: "/backups",
+      name: "backups",
+      components: {
+        header: AppHeader,
+        default: Backups,
+        footer: AppFooter
+      }
+    },
+    {
       path: "/",
       name: "backups",
       components: {

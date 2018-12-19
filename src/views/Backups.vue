@@ -18,7 +18,7 @@
 
                 <div class="container shape-container" style="padding-bottom: 4rem;">
                     <div class="col px-0" style="margin-bottom: 20px;">
-                        <div class="row justify-content-center">
+                        <div class="row justify-content-center" style="width: 90%;margin-left: 5%">
                             <h1 class="display-6 text-white text-center" style="width: 100%">
                               FIBOS 主网全节点区块数据备份
                             </h1>
@@ -27,7 +27,7 @@
                         </div>
                     </div>
                     <div class="card card-profile shadow">
-                      <div class="px-4">
+                      <div class="px-4 table-responsive">
                         <table class="table">
                           <thead>
                             <tr>
@@ -38,29 +38,31 @@
                             </tr>
                           </thead>
                           <tbody  style="min-height:200px;">
+
                             <!-- TODO 复制 & 添加数据的loading -->
                             <tr v-for="(item, index) in backups" :key="item.md5chksum" v-if="index < 5">
                               <td>{{item.name}}</td>
                               <td>
-                                <a :href="item.s3url">AWS S3 </a>
-                                |
-                                <a :href="item.qingUrl">QingStor</a>
+                                <a :href="item.s3url">AWS S3 </a>|<a :href="item.qingUrl">QingStor</a>
                               </td>
                               <td>{{item.size}}</td>
                               <td>{{item.md5chksum}}</td>
                             </tr>
                           </tbody>
                         </table>
+                        <content-placeholders rounded v-if="loading" style="width: 100%">
+                          <content-placeholders-text :lines="5" />
+                        </content-placeholders>
                       </div>
                     </div>
 
                 </div>
 
-                <div class="container" style="max-width: 100%; background-color: white;padding-top: 8rem;padding-bottom: 4rem;">
+                <div class="container row-container">
                   <div class="row">
 
                       <!-- TODO 可参考其他的数据网站  -->
-                      <div class="col-6" style="padding-left: 15% !important; padding-right: 2%">
+                      <div class="row-left">
                         <h3 style="padding-bottom:2rem;"><i class="fa fa-code" style="margin-top: -4px;margin-right: 12px;vertical-align: middle;font-size: 150%;color: #0098ef;"></i>如何使用</h3>
                         <p>备份数据同步压缩于节点 <code>liuqiangdong</code> 的 API Server，在 <strong>Ubuntu 16.04</strong> 系统下测试使用正常，其他操作系统未经测试。</p>
                         <p>请根据自己的网络情况，墙外服务器请选择 AWS S3，墙内服务器请选择 qingStor，选择最新的备份区块数据链接进行下载，再解压缩到你的数据存储目录，然后重新 启动 fibos server 即可。</p>
@@ -68,7 +70,7 @@
                         <p>QingStor 下载也可以使用 <a href="https://docs.qingcloud.com/qingstor/developer_tools/qsctl.html">qsctl</a>，如：<br><code>qsctl cp qs://liuqiangdong/data-20181111.tar.gz</code>。</p>
                         <p>有任何问题，请 memo 留言转账 FO 至 <code>liuqiangdong</code>。祝你好运，FO bless you! </p>
                       </div>
-                      <div class="col-6" style="padding-right: 15% !important;">
+                      <div class="row-right">
                         <pre>
                           <span># 进入自己的启动目录，将自己已损坏的数据目录删除</span>
                           <span>cd /fibos-starter</span>
@@ -107,7 +109,8 @@ export default {
   name: "backups",
   data() {
     return {
-      backups: []
+      backups: [],
+      loading: true
     };
   },
   mounted () {
@@ -117,6 +120,7 @@ export default {
     getBackups() {
       API.getBackups().then((data) => {
           this.backups = data
+          this.loading = false
       })
     }
   },
@@ -154,5 +158,53 @@ pre {
 p {
   color: #212529;
   font-weight: 300;
+}
+.table-responsive {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+}
+td {
+  white-space: nowrap;
+}
+.row-left {
+  padding-left: 15% !important;
+  padding-right: 2%;
+      -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.row-right {
+  padding-right: 15% !important;
+      -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.row-container {
+  max-width: 100%;
+  background-color: white;
+  padding-top: 8rem;
+  padding-bottom: 4rem;
+}
+@media (max-width: 1199.98px) {
+  .row-left {
+    padding-left: 8% !important;
+    padding-right: 8%;
+    flex: auto;
+    max-width: 100%;
+  }
+  .row-right {
+    padding-left: 8%!important;
+    padding-right: 8%!important;
+    flex: auto;
+    max-width: 100%;
+    justify-content: center;
+  }
+  .row-container {
+    padding-bottom: 0rem;
+    margin-bottom: -2rem;
+  }
 }
 </style>
