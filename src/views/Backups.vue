@@ -119,8 +119,13 @@ export default {
   methods: {
     getBackups() {
       API.getBackups().then((data) => {
-          this.backups = data
-          this.loading = false
+          let arr = data.map(item => {
+            let strArr = item.name.split('_')
+            item.name = strArr[0] + '_' + strArr[1] + '_' + strArr[2].slice(0,8) + '_' + strArr[2].slice(8)
+            return item;
+          })
+          this.backups = arr;
+          this.loading = false;
       })
     }
   },

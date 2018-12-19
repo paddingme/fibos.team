@@ -50,13 +50,13 @@
             </div>
             <hr>
             <div class="row align-items-center justify-content-center">
-                <div class="col-md-6 col-sm-6">
+                <div class="col-6">
                     <div class="copyright">
                         &copy; 2018
                         <a href="https://fibos.team" target="_blank">FIBOS TEAM</a>.
                     </div>
                 </div>
-                <div class="col-md-6 col-sm-6">
+                <div class="col-6">
                     <ul class="nav nav-footer justify-content-end">
                         <!-- <li class="nav-item">
                             <a href="/ownership_disclosure.html" class="nav-link" target="_blank">disclosure</a>
